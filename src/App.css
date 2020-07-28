@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+.body{
+  background-color: rgb(97, 97, 97);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Todo-placement{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.Todo-input{
+  position: absolute;
+  margin-bottom: -25px;
+}
+
+.delete-button{
+  background-color:rgb(255, 0, 0);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.TODOS{
+  border:1px solid rgb(0, 0, 0);
+  width: 250px;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  background-color: rgb(255, 255, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todos-phrases{
+  margin-top: 5px;
+  color: black;
+  text-align: center;
+}
+
+.write-your-input{
+  width: 200px;
+  height: 30px;
+  margin-left: 40px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.write-your-input::placeholder{
+  color: gray;
+}
+
+.Add-button{
+  width: 56px;
+  height: 36px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 2px;
+}
+
+.rq{
+  text-align: center;
+  color: grey;
+  font-size: small;
+}
+
+#textarea {
+  min-width: 100px;
+  max-width: 250px;
+  word-break: break-all;
+  cursor: text;
 }
